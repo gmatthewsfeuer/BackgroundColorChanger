@@ -28,7 +28,7 @@
 </p>
 
 <div align="center">
-  <img src="./docs/preview.gif" alt="demo desktop" width="600px" height="300px">
+  <img src="./docs/preview.gif" alt="demo desktop" width="670px" height="330px">
 </div>
 
 ---
