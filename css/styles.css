@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo&display=swap');
+
+body {
+  position: relative;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: #add8e6;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  padding: 10.6rem 5.6rem;
+}
+
+h1 {
+  font: 400 8.6rem Anton;
+  line-height: 8.6rem;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0, 0.5);
+  text-align: center;
+  cursor: default;
+}
+
+span {
+  font: 400 2.6rem Anton;
+  line-height: 8.6rem;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+#btnChangeColor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem 2.6rem;
+
+  color: #FFF;
+
+  background: rgb(35, 35, 35);
+  border: none;
+  border-radius: 2.6rem;
+
+  font: 400 2.6rem Archivo;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+#clipboardColor {
+  width: 10%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+
+  cursor: pointer;
+
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#clipboardColor:hover {
+  transform: scale(1.5);
+  animation: tremulo 0.5s;
+}
+
+@keyframes tremulo {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  75%{
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    transform: scale(1.5);
+  }
+}
+
+.far {
+  font-size: 2.6rem;
+  color: rgb(0, 0, 0, 0.5);
+}
